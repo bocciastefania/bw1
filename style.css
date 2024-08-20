@@ -1,0 +1,46 @@
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+h1, p, ul, label{
+    color: whitesmoke;    
+}
+h1{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 60px;
+}
+h2{
+    color: #d20094;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 30px
+}
+span{
+    font-weight: bold;
+}
+button{
+    background-color: #00ffff;
+    width: 10rem;
+    height: 2.5rem;
+    margin-left: 10rem;
+    font-weight: bold;
+}
+p, ul{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 16px;
+}
+label, button{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
