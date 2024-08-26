@@ -127,7 +127,7 @@ answers.forEach(answer => {
   const input = document.createElement('input');
   input.type = 'radio';
   input.name = 'question' + index; 
-  input.value = answers;
+  input.value = answer;
 
   label.appendChild(input);
   label.appendChild(document.createTextNode(answer));
