@@ -1,0 +1,91 @@
+* {
+    color: whitesmoke;
+    background-color: #0f101c;
+  }
+  body {
+    font-family: "Inter", sans-serif;
+    margin: 3rem;
+    margin-bottom: 5rem;
+  }
+  #logo {
+    width: 13%;
+    height: 9%;
+    display: flex;
+    justify-content: left;
+  }
+
+  h1 {
+    font-family: "Outfit", sans-serif;
+    font-size: 60px;
+  }
+
+  h2 {
+    font-family: "Outfit", sans-serif;
+    color: #881b80;
+    font-size: 30px;
+  }
+
+  .greenTick {
+    width: 20px;
+    height: 15px;
+  }
+
+  .chartDiv {
+    display: flex;
+    justify-content: center;
+  }
+
+  #doghnutChart {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    
+  }
+  #doghnutChart::before {
+    content: "";
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    background: #0f101c;
+  }
+
+  table {
+    border-collapse: collapse;
+    background-color: #17192b;
+    border-radius: 15px;
+  }
+  #tableDiv {
+    background-color: #17192b;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+  }
+
+  th {
+    font-family: "Inter", sans-serif;
+    padding: 1rem;
+    background-color: #17192b;
+    border-radius: 15px;
+  }
+
+  td {
+    font-family: "Inter", sans-serif;
+    padding: 1rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    background-color: #17192b;
+    border-radius: 15px;
+  }
+
+  table td + td {
+    border-left: 2px solid #2f4365;
+  }
+  .correct {
+    font-weight: bold;
+  }
