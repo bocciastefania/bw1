@@ -3,26 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="question-page-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <title>Benchmark</title>
+    <link rel="stylesheet" href="question-page-style.css">
 </head>
 <body>
     <header>
-       <img src="epicode/BW1/epicode_logo.png" alt="epicode logo">
+       <img src="./assets/epicode_logo.png" alt="epicode logo">
     </header>
+    
+    <div id = "timer" class="timer-circle"> <span class="seconds">SECONDS</span><span id="time_left">50</span><span class="remaining">REMAINING</span></div>
 
-    <div id = "timer"> SECONDS REMAINING <span id="time_left">50</span></div>
-
-    <section>
+    <main>
         <div id="quiz"></div>
-    </section>    
-    
-    <div id="results"></div>
+        <div id="results"></div>
+    </main>
 
-    <footer>
-        <p id="question-number">Question 1/10</p>
-    </footer>
+    <footer> Q U E S T I O N &ensp; 1<span> / 10</span></footer>
     
-    <script src="script.js"></script> 
+    <script src="./script.js"></script> 
 </body>
 </html>
