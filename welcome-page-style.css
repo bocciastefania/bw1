@@ -3,23 +3,34 @@ body{
     background-size: cover;
     background-position: center;
 }
+.logoWelcomepage{
+    margin-top: 2rem;
+    margin-left: 3rem;
+    margin-bottom: 5rem;
+}
 h1, p, ul, label{
     color: whitesmoke;    
 }
+p, h1, h2, ul, label{
+    margin-left: 3rem;
+}
 h1{
-    font-family: "Outfit", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: lighter;
-    font-style: normal;
+    font-family: "Outfit", sans-serif;    
+    font-weight: 400;  
     font-size: 60px;
+    line-height: 0.8;
+}
+.instructions h2{
+    margin-bottom: 5px;
+}
+.instructions p{
+    margin-top: 0%;
 }
 h2{
     color: #d20094;
     font-family: "Outfit", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-    font-size: 30px
+    font-size: 30px;
+    font-weight: 600;
 }
 span{
     font-weight: bold;
@@ -31,16 +42,63 @@ button{
     margin-left: 10rem;
     font-weight: bold;
 }
+.checkboxDiv{
+    display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 60px;
+}
+#checkToProceed{
+    appearance: none;
+    width: 16px; 
+  height: 16px;
+  border: 2px solid white;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  margin-right: 10px;  
+}
+
+#checkToProceed:checked{
+    background-color: white;
+}
+#checkToProceed:checked::after{
+    content: '';
+  position: absolute;
+  left: 4px;
+  top: 1px;
+  width: 4px;
+  height: 8px;
+  border: solid #000;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+#proceedButton{
+    padding: 10px 20px;
+    background-color: #00ffff;
+    border: none;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 5px 2.5px #00ffff;
+    transition: 0.3s;
+}
+#proceedButton:hover{
+    box-shadow: 0px 0px 10px 5px #00ffff;
+}
+
 p, ul{
     font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
     font-size: 16px;
+    font-weight: 200;
 }
-label, button{
-    font-family: "Outfit", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
+label{
+    font-family: "Inter", sans-serif;
+}
+button{
+    font-family: "Outfit", sans-serif;    
+    
 }

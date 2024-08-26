@@ -5,14 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome page</title>
     <link rel="stylesheet" href="welcome-page-style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,600;1,14..32,600&family=Outfit:wght@100..900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap">
 </head>
 <body background="./assets/bg.jpg">
-    <img src="./assets/epicode_logo.png" alt="Epicode logo" width="200em">
+    <img class="logoWelcomepage" src="./assets/epicode_logo.png" alt="Epicode logo" width="150">
+
     <h1>Welcome to <br><span>your exam</span></h1>
+<div class="instructions">
     <h2>Instructions</h2>
-    <p>We don't expect most engineers to know the answers to all of this questions,
+    <p>We don't expect most engineers to know the answers to all of these <br> questions,
         so don't worry if you're unsure of a few of them.
     </p>
+</div>
     <br>
     <ul>
         <li>Each question is <span>timed</span>
@@ -24,13 +29,15 @@
         </li>
     </ul>
     <br>
-    <form action="http://127.0.0.1:5500/question1.html" method="GET">
+    <div class="checkboxDiv">
+    <form action="http://127.0.0.1:5500/question-page.html" method="GET">
     <label>
     <input type="checkbox" name="html" id="checkToProceed">
     I promise to answer myself without help from anyone
     </label>
     <button id="proceedButton" type="submit" disabled>Proceed</button>
     </form>    
+    </div>
     <script>
 
         let checkbox = document.getElementById('checkToProceed')
